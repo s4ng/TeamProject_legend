@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="412dp"
+        android:layout_height="221dp"
+        android:background="#CDDC39"
+        android:scrollbarDefaultDelayBeforeFade="400"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전설이조 뱅킹"
+            tools:layout_editor_absoluteX="154dp"
+            tools:layout_editor_absoluteY="114dp" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="413dp"
+        android:layout_height="202dp"
+        android:background="#FFFFFF"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="220dp">
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="74dp"
+            android:layout_height="35dp"
+            android:text="비밀번호"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="75dp" />
+
+        <EditText
+            android:id="@+id/pw_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="영문, 숫자 6~12자"
+            android:inputType="textPassword"
+            tools:layout_editor_absoluteX="125dp"
+            tools:layout_editor_absoluteY="75dp" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로그인"
+            tools:layout_editor_absoluteX="125dp"
+            tools:layout_editor_absoluteY="120dp" />
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="74dp"
+            android:layout_height="35dp"
+            android:text="아이디"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="30dp" />
+
+        <EditText
+            android:id="@+id/id_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="이메일 형식"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="125dp"
+            tools:layout_editor_absoluteY="29dp" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="410dp"
+        android:layout_height="308dp"
+        android:background="#CDDC39"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="423dp">
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="새 계정 만들기"
+            tools:layout_editor_absoluteX="125dp"
+            tools:layout_editor_absoluteY="27dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="계정이 없으세요?"
+            tools:layout_editor_absoluteX="125dp"
+            tools:layout_editor_absoluteY="8dp" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
