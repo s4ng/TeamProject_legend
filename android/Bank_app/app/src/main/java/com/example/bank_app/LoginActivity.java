@@ -7,7 +7,7 @@ import android.view.View;
 import android.content.Intent;
 import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,9 +20,9 @@ public class MainActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String userid = id.getText().toString();
+                String userID = id.getText().toString();
                 Intent intent = new Intent(getApplicationContext(), SubActivity_1.class);
-                intent.putExtra(userid, "id");
+                intent.putExtra("key", userID);
                 startActivity(intent);
             }
         });
